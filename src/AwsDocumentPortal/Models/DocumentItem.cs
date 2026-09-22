@@ -1,0 +1,2 @@
+namespace AwsDocumentPortal.Models;
+public sealed class DocumentItem{public Guid Id{get;init;}=Guid.NewGuid();public required string FileName{get;init;}public required string DocumentType{get;init;}public long SizeBytes{get;init;}public DateTimeOffset UploadedAtUtc{get;init;}=DateTimeOffset.UtcNow;public required string StorageKey{get;init;}}
