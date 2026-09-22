@@ -22,7 +22,7 @@ jobs:
           dotnet-version: 8.0.x
 
       - name: Restore
-        run: dotnet restore AwsDocumentPortal/AwsDocumentPortal.csproj
+        run: dotnet restore src/AwsDocumentPortal/AwsDocumentPortal.csproj
 
       - name: Build
-        run: dotnet build AwsDocumentPortal/AwsDocumentPortal.csproj --configuration Release --no-restore
+        run: dotnet build src/AwsDocumentPortal/AwsDocumentPortal.csproj --configuration Release --no-restore
