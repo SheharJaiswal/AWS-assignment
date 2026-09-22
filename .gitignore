@@ -1,0 +1,94 @@
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio cache/options
+.vs/
+.vscode/
+
+# Visual Studio Code
+*.code-workspace
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.user
+*.sln.docstates
+
+# Rider
+.idea/
+*.sln.iml
+*.swp
+*.swo
+*~
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+.nuget/
+*.nuget.props
+*.nuget.g.props
+*.nuget.g.targets
+
+# Local packages
+packages/
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# Test Results
+TestResults/
+*.trx
+*.coverage
+
+# ASP.NET Core
+appsettings.Development.json
+appsettings.Production.json
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS specific
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Docker
+docker-compose.override.yml
+
+# Build output
+out/
+build/
+dist/
+
+# Certificates
+*.pfx
+*.pem
+*.crt
+*.key

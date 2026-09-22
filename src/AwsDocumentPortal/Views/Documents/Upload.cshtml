@@ -1,2 +1,27 @@
 @model DocumentUploadViewModel
-@{ViewData["Title"]="Upload";}<div class="row justify-content-center"><div class="col-lg-7"><div class="card shadow-sm"><div class="card-body p-4"><h1 class="h3">Upload document</h1><p class="text-muted">PDF, PNG or JPG; maximum 10 MB.</p><form asp-action="Upload" method="post" enctype="multipart/form-data"><div asp-validation-summary="ModelOnly" class="text-danger"></div><label asp-for="DocumentType" class="form-label mt-3"></label><select asp-for="DocumentType" class="form-select"><option>Identity Proof</option><option>Claim Form</option><option>Supporting Evidence</option></select><label asp-for="File" class="form-label mt-3"></label><input asp-for="File" class="form-control" type="file" accept=".pdf,.png,.jpg,.jpeg"/><span asp-validation-for="File" class="text-danger"></span><button class="btn btn-primary mt-4">Upload securely</button></form></div></div></div></div>
+@{
+    ViewData["Title"] = "Upload";
+}
+<div class="row justify-content-center">
+    <div class="col-lg-7">
+        <div class="card shadow-sm">
+            <div class="card-body p-4">
+                <h1 class="h3">Upload document</h1>
+                <p class="text-muted">PDF, PNG or JPG; maximum 10 MB.</p>
+                <form asp-action="Upload" method="post" enctype="multipart/form-data">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <label asp-for="DocumentType" class="form-label mt-3"></label>
+                    <select asp-for="DocumentType" class="form-select">
+                        <option>Identity Proof</option>
+                        <option>Claim Form</option>
+                        <option>Supporting Evidence</option>
+                    </select>
+                    <label asp-for="File" class="form-label mt-3"></label>
+                    <input asp-for="File" class="form-control" type="file" accept=".pdf,.png,.jpg,.jpeg" />
+                    <span asp-validation-for="File" class="text-danger">
+                    </span><button class="btn btn-primary mt-4">Upload securely</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
