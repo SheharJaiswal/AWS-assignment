@@ -4,7 +4,7 @@ var builder=WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDefaultAWSOptions(builder.Configuration.GetAWSOptions());
 builder.Services.AddAWSService<IAmazonS3>();
-builder.Services.AddSingleton<IDocumentStorage,LocalDocumentStorage>();
+builder.Services.AddSingleton<ILocalDocumentStorage,LocalDocumentStorage>();
 builder.Services.AddSingleton<IS3DocumentStorage,S3DocumentStorage>();
 builder.Services.AddSingleton<IDocumentStorage,StorageProviderDocumentStorage>();
 var app=builder.Build();
